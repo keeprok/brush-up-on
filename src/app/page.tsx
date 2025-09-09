@@ -1,9 +1,9 @@
-import ProductList from '@/components/ProductList';
+import MBTITest from '@/components/4/Mbti';
 
 export default function Home() {
   return (
     <div>
-      <ProductList />
+      <MBTITest />
     </div>
   );
 }

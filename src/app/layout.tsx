@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ThemeProvider } from '@/providers/ThemeProvider';
 import './globals.css';
+import LazyMotionProvider from '@/providers/LazyMotionProvider';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider> {children}</ThemeProvider>
+        <LazyMotionProvider>
+          <ThemeProvider> {children}</ThemeProvider>
+        </LazyMotionProvider>
       </body>
     </html>
   );
