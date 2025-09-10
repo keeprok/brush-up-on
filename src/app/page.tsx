@@ -1,9 +1,9 @@
-import MBTITest from '@/components/4/Mbti';
+import IsModalHiddenPage from '@/components/5/Cookie/question/IsModalHiddenPage';
 
 export default function Home() {
   return (
     <div>
-      <MBTITest />
+      <IsModalHiddenPage />
     </div>
   );
 }
