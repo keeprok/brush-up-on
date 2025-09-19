@@ -1,0 +1,9 @@
+name: Github Actions로 테스트 자동화하기
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Github Repository 파일 불러오기
+        uses: actions/checkout@v4
