@@ -7,3 +7,14 @@ jobs:
     steps:
       - name: Github Repository 파일 불러오기
         uses: actions/checkout@v4
+
+      - name: Node.js 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 의존성(라이브러리) 설치
+        run: npm ci
+
+      - name: 테스트 실행하기
+        run: npm run test
