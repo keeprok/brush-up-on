@@ -1,5 +1,8 @@
 name: Github Actions로 테스트 자동화하기
-on: pull_request
+on:
+  push:
+    branches:
+      - feature/*
 
 jobs:
   test:
@@ -16,5 +19,5 @@ jobs:
       - name: 의존성(라이브러리) 설치
         run: npm ci
 
-    #   - name: 테스트 실행하기
-    #     run: npm run test - jest 설치 후 test 파일 설치 후 해보기
+      - name: 테스트 실행하기
+        run: npm run test
