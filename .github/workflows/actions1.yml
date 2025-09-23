@@ -33,7 +33,6 @@ jobs:
           node-version: 20
           cache: 'npm'
       - run: npm ci
-
       - run: npm run typecheck # typecheck 스크립트 실행
 
   test:
