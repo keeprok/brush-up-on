@@ -1,9 +1,5 @@
 name: Github Actions로 테스트 자동화하기
-on:
-  pull_request:
-    branches:
-      - main
-    types: [opened]
+on: pull_request
 
 jobs:
   test:
